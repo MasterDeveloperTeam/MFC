@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'better_errors'
+
 # template language
 gem 'slim'
 gem 'slim-rails'

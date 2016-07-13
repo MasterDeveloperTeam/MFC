@@ -1,2 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "shared/navbar";
+
+.form-width {
+  width: 210px;
+}
