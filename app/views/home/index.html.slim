@@ -3,4 +3,21 @@
 .container
   ul.nav.nav-tabs role="tablist"
     li.active role="presentation"
-      = link_to "MFC QUALLITY", "#quallity"
+      = link_to "MFC Quality", "#quality", role: :tab, aria: {controls: :quality}, data: {toggle: :tab}
+    li role="presentation"
+      = link_to "Our Service", "#service", role: :tab, aria: {controls: :service}, data: {toggle: :tab}
+  .tab-content
+    #quality.tab-pane.active role="tabpanel"
+      .col-xs-12.col-md-7.text-justify
+        h1 Quality
+        p Every feather hand-picked, every hackle hand-selected and every fly handmade. Quality is at the heart of everything we do at Fulling Mill. Each and every fly is expertly tied by one of our highly skilled tyers before completing a rigorous three phase quality control process. This gives us the confidence to offer our famous Fulling Mill 200% guarantee: if a fly isn’t up to the highest standards we expect for you, we will replace it with two that are. No ‘Ifs’, ‘Ands’ or ‘Buts’, we are that confident on our quality! Please enjoy browsing our assortment.
+        = link_to "Our Products", "#", class: "btn btn-success"
+      .col-xs-12.col-md-4
+        = image_tag("MFC Logo.jpg")
+    #service.tab-pane role="tabpanel"
+      .col-xs-12.col-md-7.text-justify
+        h1 Service
+        p In today’s frenetic and instantaneous world Fulling Mill remains steadfastly dedicated to providing you with the highest possible level of service: we are proud to be old-fashioned in this respect! Unlike many other fly tying companies we keep a huge stock of flies at both our warehouses in the UK and US: because of this we are able to fill the vast majority of our orders almost immediately - and make sure your flies reach you promptly wherever you are. Try us out: browse our assortment for what you want and place an order with us today.
+        = link_to "Our Products", "#", class: "btn btn-success"
+      .col-xs-12.col-md-4
+        = image_tag("MFC Logo.jpg")
