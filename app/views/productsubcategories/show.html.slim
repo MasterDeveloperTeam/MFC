@@ -1,0 +1,9 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @productsubcategory.name
+
+= link_to 'Edit', edit_productsubcategory_path(@productsubcategory)
+'|
+= link_to 'Back', productsubcategories_path

@@ -1,0 +1,21 @@
+h1 Listing productsubcategories
+
+table
+  thead
+    tr
+      th Name
+      th
+      th
+      th
+
+  tbody
+    - @productsubcategories.each do |productsubcategory|
+      tr
+        td = productsubcategory.name
+        td = link_to 'Show', productsubcategory
+        td = link_to 'Edit', edit_productsubcategory_path(productsubcategory)
+        td = link_to 'Destroy', productsubcategory, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Productsubcategory', new_productsubcategory_path
