@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'better_errors'
+gem 'secure_headers', '~> 3.4'
 
 # template language
 gem 'slim'
@@ -9,6 +9,8 @@ gem 'slim-rails'
 # bootstrap sass
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
+gem 'bourbon', '~> 4.2', '>= 4.2.7'
+gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 
 gem 'rails', '~> 5.0.0'
 gem 'puma', '~> 3.0'
@@ -25,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platform: :mri
+  gem 'awesome_print', '~> 1.7'
+  gem 'pry', '~> 0.10.4'
 end
 
 group :development do
@@ -32,6 +36,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
 end
 
 group :production do

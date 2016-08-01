@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :productcategories do
-    resources :productsubcategories
+  resources :productcategories, as: :cate do
+    resources :productsubcategories, as: :subcate
   end
   resources :products
   root 'home#index'
