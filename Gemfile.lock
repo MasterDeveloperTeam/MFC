@@ -174,7 +174,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors
+  better_errors (~> 2.1, >= 2.1.1)
   bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2)
