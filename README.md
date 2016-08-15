@@ -3,6 +3,7 @@
 To get started with the app, clone the repo and then install the needed gems:
 
 ```
+$ git clone git@github.com:MasterDeveloperTeam/mfc.git
 $ bundle install --without production
 ```
 
